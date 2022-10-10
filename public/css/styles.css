@@ -1,0 +1,524 @@
+/*
+Paleta de colores:
+
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a;
+
+Tipografías:
+
+    Familia: 'Roboto'
+
+Tamaños Tipográficos:
+
+    Cuerpos de texto: 12px
+    Headlines (Basado en tu última visita/Ofertas): 24px
+    Precios: 18px
+    Descuentos: 16px
+    Descripciones: 16px
+*/
+
+/*******************************************************************BODY*******************************************************************/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto';
+}
+
+/*******************************************************************HEADER*******************************************************************/
+
+header {
+    width: 100vw;
+    background-color: #EAC926;
+}
+
+.MainHeader {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+/*LOGO Y BARRA DE BÚSQUEDA*/
+
+.SearchLogoContainer {
+    display: flex;
+    column-gap: 5px;
+}
+
+a.HomeLogo{
+    width: 50%;
+    align-self: center;
+}
+
+img.Logo{
+    width: 100%;
+    align-items: center;
+}
+
+.SearchBar{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 5px;
+    justify-content: center;
+    width: 50%;
+}
+
+.SearchButton{
+    border-radius: inherit;
+    border-style: none;
+    background-color: #fff;
+}
+
+.InputSearchBar {
+    width: 85%;
+    background-color: #fff;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+div i.fa-magnifying-glass {
+    font-size: 12px;
+    background-color: #fff;
+    color: #666;
+    padding: 1px;
+    border: none;
+    align-self: center;
+}
+
+p.PaymentPlan {
+    text-align: center;
+    margin: 20px;
+    font-size: 12px;
+}
+
+.MainNavbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.MainNavbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.Navbar1{
+    display: flex;
+
+}
+
+ul.Navbar2 {
+    display: flex;
+}
+
+.MainNavbar a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 2px;
+    font-size: 12px;
+}
+
+.BurgerMenu {
+    background-color: #1259c3;
+    color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    justify-content: center;
+    font-size: 18px;
+    margin: auto;
+    position: relative;
+    bottom: 20px;
+}
+
+.Banner {
+    width: 100vw;
+}
+
+/*******************************************************************MAIN*******************************************************************/
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+h3.Headlines {
+    font-size: 24px;
+    font-weight: 900;
+    color: #666;
+    margin: 15px;
+}
+
+main article {
+    width: 100%;
+    background-color: #fff;
+}
+
+img.ProductImg {
+    width: 100%;
+}
+
+article div i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px #39b54a;
+    color: #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+article div i.fa-truck:hover {
+    background-color: transparent;
+    outline: 2px dashed;
+    transform: rotate(-90deg);
+    transition-duration: 0.8s;
+}
+
+main div.ProductDetail {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+div.PriceContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: none;
+}
+
+p.Price {
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+
+p.Sale {
+    font-size: 16px;
+    color: #39b54a;
+    flex-grow: 0.7;
+}
+
+p.Description {
+    font-size: 16px;
+    color: #666;
+    display: none;
+}
+
+/*******************************************************************FOOTER*******************************************************************/
+
+footer {
+    margin: 5px;
+    background-color: white;
+    color: #666;
+}
+
+section.FooterContainer {
+    text-align: center;
+    padding: 20px 50px;
+}
+
+.FooterIcon {
+    color: #1259c3;
+    font-size: 24px;
+    padding-bottom: 0%;
+    padding-top: 30px;
+}
+
+.FooterIcon:hover{
+    color: #39b54a;
+}
+
+section.FooterContainer h3 {
+    font-size: 18px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+}
+
+section.FooterContainer p {
+    font-size: 12px;
+    margin-top: 0%;
+}
+
+footer p.Copyright {
+    font-size: 12px;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+/*******************************************************************FORMULARIOS*******************************************************************/
+
+.CreateProductForm{
+    padding: 20px 15px;
+}
+
+.LoginForm{
+    padding: 20px 15px;
+}
+
+.FormInput{
+    margin-bottom: 15px;
+}
+
+.FormInput label{
+    margin-bottom: 5px;
+    font-weight: 800;
+    display: block;
+}
+
+.UploadProfilePicture{
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.InputControl{
+    width: 100%;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.SubmitBotton,
+.ResetBotton{
+    width: 100%;
+    background-color: #1259c3;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.SubmitBotton:hover{
+    background-color: #0022AA;
+}
+
+.ResetBotton:hover{
+    background-color: #666;
+}
+
+label.UserProfile{
+    font-weight: 500;
+    font-size: 12px;
+    align-items: center;
+    margin: 0px;
+}
+
+.UserProfileContainer{
+    display: flex;
+    margin-left: 15px;
+}
+
+div.UserProfile{
+    display: flex;
+    column-gap: 20px;
+    margin-right: 20PX;
+    padding: 5px;
+}
+
+.CheckboxContainer{
+    margin-bottom: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+input.Interests{
+    width: auto;
+
+}
+
+label.Interests{
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0px;
+}
+
+div.InterestsCheck{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 20px;
+}
+
+.UploadProfilePicture{
+    margin-top: 5px;
+}
+
+/*******************************************************************MEDIA QUERY*******************************************************************/
+
+/*navegación en mobile*/
+@media (max-width: 360px) {
+
+   
+
+    header nav.MainNavbar ul {
+        display: none;
+    }
+
+    .ArticleContainer {
+        background-color: #ebebeb;
+    }
+
+    article.Product{
+        margin-bottom: 10px;
+    }
+
+}
+
+/*navegación en tablet*/
+
+
+@media (max-width: 768px) and (min-width: 361px) {
+
+    .MainHeader {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        column-gap: 5px;
+    }
+
+    .SearchLogoContainer {
+        flex-wrap: nowrap;
+        justify-content: center;
+        column-gap: 5px;
+    }
+
+    .InputSearchBar {
+        width: 85%;
+    }
+
+    p.PaymentPlan {
+        text-align: center;
+        margin: auto;
+        font-size: 80%;
+    }
+
+    .ArticleContainer {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 10px;
+        background-color: #ebebeb;
+        justify-content: space-around;
+    }
+
+    .BurgerMenu {
+        display: none;
+    }
+
+    article.Product{
+        width: 48%;
+    }
+
+    article.Product:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 48%;
+    }
+
+    div.ProductDetail:hover p.Description{
+        display: block;
+    }
+}
+
+   
+
+/*navegación en desktop*/
+
+@media (min-width: 769px) {
+    .MainHeader {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        column-gap: 15px;
+    }
+
+    .SearchLogoContainer {
+        flex-wrap: nowrap;
+        justify-content: center;
+        column-gap: 15px;
+    }
+
+    .InputSearchBar {
+        width: 85%;
+        border-radius: 0%;
+    }
+
+    nav.MainNavbar {
+        padding: 20px 40px;
+    }
+
+    ul.Navbar1{
+        column-gap: 20px;
+    }
+
+    ul.Navbar2 {
+        column-gap: 20px;
+    }
+
+    .ArticleContainer {
+        display: flex;
+        column-gap: 10px;
+        background-color: #ebebeb;
+    }
+
+    .BurgerMenu {
+        display: none;
+    }
+
+    article.Product:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    div.ProductDetail:hover p.Description{
+        display: block;
+    }
+
+    .FooterContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.FooterOptions{
+        width: 33.3%;
+    }
+
+    div.FooterContainer p{
+        padding: 0px 20px;
+    } 
+    
+    .CreateProductForm,
+    .LoginForm{
+        padding: 20px 20%;
+    }
+}
